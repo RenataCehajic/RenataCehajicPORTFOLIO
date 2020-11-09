@@ -1,0 +1,314 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body, html {
+	margin: 0; 
+	height: 100%; 
+  	font-family: 'Open Sans', sans-serif;
+}
+
+body {
+	padding-top: 54px;
+	color: #050b10;
+	font-family: Open Sans', sans-serif;
+}
+
+a span {
+	font-size: 2.5rem; 
+	margin-left: 30px; 
+}
+
+a span::before {
+	content: " R";
+	color: red; 
+}
+
+a span::after { 
+  content: ".";
+  color: red;
+}
+
+#renata {
+	font-size: 5.0rem;
+	font-family: Open Sans', sans-serif;
+}
+
+#renatap {
+	font-size: 1.25em;
+	font-family: 'Open Sans', sans-serif;
+}
+
+@media (max-width: 500px) {
+	#renata {
+		font-size: 2.5em; 
+	}
+	#renatap {
+		font-size: 0.8em; 
+	}
+}
+
+h1 {
+	font-size: 3.0em; 
+}
+
+h2, h3, h4 { 
+	font-family: 'Open Sans', sans-serif;
+}
+
+.aboutp {
+	text-align: center;
+	width: 1150px; 
+	margin-top: 30px; 
+	margin-bottom: 100px; 
+	line-height: 1.5; 
+	font-size: 1.0em;
+}
+
+p {
+	text-align: justify;
+	font-size: 1.25em;
+}
+
+.description {
+	font-size: 1.0em; 
+}
+
+nav {
+	/* border-bottom: 1px solid #f1f1f1;  */
+	width: 90%; 
+	padding: 20px 0; 
+	margin-left: calc(10%/6); 
+}
+
+.navbar-brand {
+	font-size: 2.0em; 
+}
+
+.nav-item a:hover {
+  border-bottom: 3px solid red;
+}
+
+.nav-item a:active {
+  border-bottom: 3px solid red;
+}
+
+.nav-link {
+	font-weight: 700;
+	margin-right: 20px;
+	font-size: 0.8em;
+}
+
+.halfSize {
+	font-size: 0.5rem;
+}
+
+.caption {
+	position: static;
+	text-align: left; 
+	letter-spacing: 3px;
+	background: white;
+	margin: 100px 50px 50px 250px; 
+	/* margin: 10px 50px 20px; */
+	padding: 0;
+	display: inline-block;
+	animation-fill-mode: forwards; 
+	animation-duration: 3s;
+	animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-top: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-top: 10%;
+    width: 100%;
+  }
+}
+
+.icon {
+	position: relative; 
+	top: 40px; 
+	right: -600px; 
+	
+	/* display: inline-block;
+	margin: 0px 50px 50px 500px;  */
+}
+
+.foot {
+	color: white; 
+	font-size: 0.8em; 
+	text-align: right; 
+}
+
+.description {
+	line-height: 1.5; 
+}
+
+/* #f8f9fa  */
+
+.center {
+	text-align: center;
+}
+
+.jumbotron {
+	height: 100%;
+}
+
+.iconify {
+	color: #2B5B80;
+    text-shadow: 1px 1px 1px white;
+    font-size: 2.9em;
+	max-width: 100%;
+}
+
+.project-name {
+	font-size: 1.5em; 
+}
+
+.respImg {
+	width: 100%;
+}
+
+#techBG {
+	background-color: #9fbfdf;
+}
+
+#contactBGa {
+	background-color: #050b10;
+	color: #e8d0bf;
+}
+#contactBG {
+	background-color: #050b10;
+	color: #e8d0bf;
+}
+
+
+/* =========== */
+/* header images */
+#indexPic {
+	background-image: url('/images/renata/LinkedInPhoto.jpg');
+	background-color: white; 
+	background-size: contain;
+	background-position: 0;
+	background-size: 27%;
+	/* background-size: contain; */
+	background-repeat: no-repeat;
+	min-height: 100px;
+}
+
+/* #f8f9fa */
+
+/* DIVIDERS */
+/* Technology-Top */
+.custom-shape-divider-bottom-1599363533 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1599363533 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 35px;
+}
+
+.custom-shape-divider-bottom-1599363533 .shape-fill {
+    fill: rgba(145,171,194,1);
+}
+
+/* technology-bottom */
+.custom-shape-divider-top-1599363432 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1599363432 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 35px;
+}
+
+.custom-shape-divider-top-1599363432 .shape-fill {
+    fill: rgba(145,171,194,1);
+}
+
+/* contact-bottom */
+.custom-shape-divider-top-1599365442 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1599365442 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 35px;
+}
+
+.custom-shape-divider-top-1599365442 .shape-fill {
+    fill: #fff;
+}

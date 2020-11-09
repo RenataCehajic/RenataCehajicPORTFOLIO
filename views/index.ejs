@@ -1,0 +1,129 @@
+<%- include ('partials/header') %>
+<a id='home'></a>
+<!-- jumbotron here -->
+<div class='jumbotron mb-0' id='indexPic'>
+	<div class='container center overflow:hidden'>
+		<div class='row'>
+			<div class='caption'> 
+				<h1 class='text-right-center mt-2' id='renata'><strong>Hello! I'm Renata</strong></h1>
+				<p class='text-right-center mt-2' id='renatap'><strong>Full Stack Developer based in Amsterdam, The Netherlands.</strong>
+				</p>
+			</div>
+			<div class='icon col-md-6 d-none d-md-block text-center'>
+			<span class='iconify m-3' data-icon='logos:javascript'></span>
+			<span class='iconify m-3' data-icon='logos:html-5'></span>
+			<span class='iconify m-3' data-icon='logos:css-3'></span>
+			<span class='iconify m-3' data-icon='logos:bootstrap'></span>
+			<span class='iconify m-3' data-icon='logos:nodejs-icon'></span>
+			<span class='iconify m-3' data-icon='logos:npm-2'></span>
+			<span class='iconify m-3' data-icon='logos:git-icon'></span>
+			<span class='iconify m-3' data-icon='logos:github-icon'></span>
+			<span class='iconify m-3' data-icon='logos:mongodb'></span>
+			<span class='iconify m-3' data-icon='logos:heroku-icon'></span>
+			<span class='iconify m-3' data-icon='logos:netlify'></span>
+		</div>
+		</div>
+  	</div>
+</div>
+<a id='aboutMe'></a>
+
+<section>
+<!-- about section -->
+<div class='container pt-3'>
+	<h1 class='text-center mt-5'>About Me</h1>
+	<div class='container'>
+		<div class='row'>
+		<!-- <div class='col-md-9 text-center mb-5'> -->
+			<p class='aboutp'>
+Coming from Economics, Business Analytics and IT background with an MBA from VU University Amsterdam, I have always been fascinated about Web development, but never had a chance to actually do it. I finally became aware of my true calling, and I want to be able to create something valuable and unique by myself. With coding, my love for studying, having enough will, passion, and patience never stops. In September 2020, I stopped my job at Microsoft as an Inside Sales Specialist and have dedicated my full time to learning about Web development: HTML, CSS, and JavaScript. Besides that, I'm also passionate about running, taking long walks, traveling, and spending time with my family.
+			</p>
+	</div>
+		</div>
+	</div>
+</div>
+</section>
+
+	<a id='projects'></a>
+<section>
+<div class='custom-shape-divider-top-1599363432'>
+	<svg data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'>
+		<path d='M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z' class='shape-fill'></path>
+	</svg>
+</div>
+</section>
+	  
+	<!-- projects section-->
+<div class='container'>
+	<div class='row mt-4 mb-5'>
+		<div class='col-12'>
+			<h1 class='text-center'>My Projects</h1>
+		</div>
+	</div>
+</div>
+<% project.forEach ((project) => { %>
+<div class='container'>
+	<div class='row mt-5 mb-3'>
+		<div class='col-12 text-center'>
+			<h2 class='project-name'><%= project.name %></h2>
+		</div>
+	</div>	
+	<div class='row'>	
+		<div class='col-md-6 p-0'>
+			<a href='<%= project.website %>'  target='_blank'>
+				<img src='images/portfolio/<%= project.name %>.jpg' class='respImg'>
+			</a>
+			<div class='col-12'>
+				<p class='halfSize text-center'><%- project.tech %></p>
+			</div>
+		</div>
+		<div class='col-md-6'>
+			<!-- <h4>Description</h4> -->
+			<p class='description'><%= project.description %></p>
+			<div class='text-center'>
+				<a href='<%= project.website %>' target='_blank'>
+					<button class='text-center btnDark btn btn-secondary m-2'>Website</button>
+				</a>
+				<a href='<%= project.code %>' target='_blank'>
+					<button class='text-center btnDark btn btn-secondary m-2'>Code</button>
+				</a>	
+			</div>
+		</div>
+	</div>
+</div>
+<% }); %>
+	
+<footer>
+	<div class='custom-shape-divider-top-1599365442' id='contactBGa'>
+    	<svg data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'>
+        	<path d='M892.25 114.72L0 0 0 120 1200 120 1200 0 892.25 114.72z' class='shape-fill'></path>
+    	</svg>
+	</div>
+
+
+	
+<!-- connect section -->
+	<a id='contact'></a>
+	<div class='container-fluid' id='contactBG'>
+		<div class='row'>
+			<div class='col-12'>
+				<h1 class='text-center pt-3 pb-3'>Connect With Me</h1>
+			</div>
+		</div>	
+		<div class='row justify-content-center pb-5'>
+			<a href='https://github.com/RenataCehajic' target='_blank'>
+				<img src='https://img.icons8.com/doodle/48/000000/github--v1.png' class='ml-3 mr-3' alt='Github icon'/>
+			</a>
+			<a href='https://www.linkedin.com/in/renata-cehajic-49712630/' target='_blank'>
+				<img src='https://img.icons8.com/doodle/48/000000/linkedin--v2.png' class='ml-3 mr-3' alt='LinkedIn Icon'/>
+			</a>
+			<a href='mailto:renata.cehajic@gmail.com' target='_blank'>
+			<img src='https://img.icons8.com/doodle/48/000000/email--v1.png' class='ml-3 mr-3' alt= 'Renatas email'/>
+			</a>	
+		</div>
+		<div>
+			<p class='foot'>ⓒ Renata 2020</p>
+		</div>
+	</div>
+</footer>
+	   	  
+<%- include ('partials/footer') %>
